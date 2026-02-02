@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tết Tale 2026 - Final V9</title>
+    <title>Tết Tale 2026 - By Duy Lam 11B1</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
@@ -176,7 +176,15 @@
                 <button class="btn" onclick="startGame()">CHƠI LẠI</button>
             </div>
         </div>
-    </div>
+
+        <div style="margin-top: 15px; font-size: 14px; color: rgba(255,255,255,0.7); text-align: center; font-family: sans-serif; line-height: 1.6; text-shadow: 1px 1px 2px black;">
+            Được xây dựng với ❤️ bằng <span style="color: #61dafb; font-weight: bold;">React</span>, 
+            <span style="color: #38bdf8; font-weight: bold;">Tailwind CSS</span>, and love for 
+            <span style="color: #ffd700; font-weight: bold;">Y04 M0m</span>.
+            <br>
+            <span style="color: #fff; font-size: 16px; font-weight: bold; display: block; margin-top: 5px;"> Dev by D.Lam class 11B1</span>
+        </div>
+        </div>
 
     <div id="joystick-zone">
         <div id="joystick-knob"></div>
@@ -472,7 +480,7 @@
             else if (currentLevel === 7) {
                 if(frameCount % 60 === 0) spawnFirecracker();
                 if(frameCount % 60 === 0) spawnBone();
-                if(frameCount % 40 === 0) spawnBlaster(); // <-- FIX: Tăng tốc Rồng LV7 (40)
+                if(frameCount % 40 === 0) spawnBlaster(); // <-- Đã sửa thành 40 (Nhanh hơn LV6)
                 if(frameCount % 300 === 0) spawnComet(); 
                 if(frameCount % 300 === 60) spawnRedZone(1); 
                 if(frameCount % 300 === 0) spawnGhost();
@@ -730,5 +738,4 @@
         }
     </script>
 </body>
-
 </html>
